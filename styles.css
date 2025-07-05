@@ -598,12 +598,17 @@ body {
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
-    .hero {
+    /* .hero {
         padding-top: 40px !important;
         margin-top: 0;
         padding-bottom: 60px;
-    }
-    
+    } */
+    .hero {
+        /* margin-top: 0; ← これを削除するか… */
+        margin-top: 60px; /* ヘッダー高さと同じだけ余白を入れる */
+        padding-top: 40px !important;
+      }
+      
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
