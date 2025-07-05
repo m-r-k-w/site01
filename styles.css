@@ -87,7 +87,7 @@ body {
 
 /* ヘッダー */
 .header {
-    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -599,7 +599,7 @@ body {
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .hero {
-        padding-top: 120px;
+        padding-top: 40px !important;
         margin-top: 0;
         padding-bottom: 60px;
     }
@@ -643,17 +643,18 @@ body {
     }
     
     .header-content {
-        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 0;
         min-height: 32px;
     }
     
     .logo h2 {
-        font-size: 0.75rem;
-        line-height: 1.05;
+        font-size: 0.9rem;
         white-space: nowrap;
-        letter-spacing: -0.03em;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
     .header-content {
         min-height: 28px;
