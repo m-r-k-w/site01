@@ -1,0 +1,105 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景グラデーション -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- 装飾的な円 -->
+  <circle cx="100" cy="100" r="50" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1100" cy="150" r="80" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="150" cy="500" r="60" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1050" cy="450" r="40" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- メインコンテンツエリア -->
+  <rect x="100" y="100" width="1000" height="430" rx="20" fill="rgba(255,255,255,0.95)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  
+  <!-- ロゴエリア -->
+  <rect x="120" y="120" width="200" height="80" rx="15" fill="url(#cardGradient)"/>
+  
+  <!-- ロボットアイコン -->
+  <g transform="translate(140, 140)">
+    <!-- ロボットの頭 -->
+    <rect x="0" y="0" width="40" height="40" rx="8" fill="#fff"/>
+    <!-- 目 -->
+    <circle cx="12" cy="15" r="3" fill="#667eea"/>
+    <circle cx="28" cy="15" r="3" fill="#667eea"/>
+    <!-- 口 -->
+    <rect x="15" y="25" width="10" height="2" rx="1" fill="#667eea"/>
+    <!-- アンテナ -->
+    <line x1="20" y1="0" x2="20" y2="-8" stroke="#fff" stroke-width="2"/>
+    <circle cx="20" cy="-8" r="2" fill="#fff"/>
+  </g>
+  
+  <!-- タイトル -->
+  <text x="350" y="180" font-family="'Noto Sans JP', sans-serif" font-size="48" font-weight="700" fill="#1f2937">
+    ロボットプログラミング教室キッズ
+  </text>
+  
+  <!-- サブタイトル -->
+  <text x="350" y="220" font-family="'Noto Sans JP', sans-serif" font-size="24" font-weight="400" fill="#6b7280">
+    子供の未来を創造するプログラミング教育
+  </text>
+  
+  <!-- 特徴アイコン -->
+  <g transform="translate(120, 280)">
+    <!-- 少人数制 -->
+    <circle cx="30" cy="30" r="25" fill="#10b981"/>
+    <text x="30" y="38" font-family="'Noto Sans JP', sans-serif" font-size="16" font-weight="600" fill="#fff" text-anchor="middle">少人数</text>
+    
+    <!-- ロボット制作 -->
+    <circle cx="120" cy="30" r="25" fill="#f59e0b"/>
+    <text x="120" y="38" font-family="'Noto Sans JP', sans-serif" font-size="16" font-weight="600" fill="#fff" text-anchor="middle">ロボット</text>
+    
+    <!-- プログラミング -->
+    <circle cx="210" cy="30" r="25" fill="#667eea"/>
+    <text x="210" y="38" font-family="'Noto Sans JP', sans-serif" font-size="16" font-weight="600" fill="#fff" text-anchor="middle">プログラミング</text>
+  </g>
+  
+  <!-- 価格情報 -->
+  <rect x="400" y="350" width="400" height="120" rx="15" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  
+  <text x="420" y="380" font-family="'Noto Sans JP', sans-serif" font-size="20" font-weight="600" fill="#fff">
+    月額8,800円
+  </text>
+  
+  <text x="420" y="410" font-family="'Noto Sans JP', sans-serif" font-size="16" font-weight="400" fill="#fff">
+    教材費込み・少人数制・入会金無料
+  </text>
+  
+  <text x="420" y="440" font-family="'Noto Sans JP', sans-serif" font-size="14" font-weight="400" fill="#fff">
+    年長～中学生まで対応
+  </text>
+  
+  <!-- キャンペーンバッジ -->
+  <rect x="750" y="350" width="200" height="60" rx="30" fill="#f59e0b"/>
+  <text x="850" y="390" font-family="'Noto Sans JP', sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">
+    入会金無料
+  </text>
+  
+  <!-- フッター -->
+  <text x="120" y="580" font-family="'Noto Sans JP', sans-serif" font-size="16" font-weight="400" fill="#6b7280">
+    robot-programming-kids.com
+  </text>
+  
+  <!-- 装飾的な要素 -->
+  <g transform="translate(1000, 200)">
+    <!-- コードブロック風 -->
+    <rect x="0" y="0" width="120" height="80" rx="8" fill="rgba(255,255,255,0.1)"/>
+    <rect x="10" y="15" width="20" height="3" rx="1.5" fill="#10b981"/>
+    <rect x="35" y="15" width="15" height="3" rx="1.5" fill="#f59e0b"/>
+    <rect x="10" y="25" width="30" height="3" rx="1.5" fill="#667eea"/>
+    <rect x="10" y="35" width="25" height="3" rx="1.5" fill="#f59e0b"/>
+    <rect x="10" y="45" width="35" height="3" rx="1.5" fill="#10b981"/>
+    <rect x="10" y="55" width="20" height="3" rx="1.5" fill="#667eea"/>
+  </g>
+</svg> 

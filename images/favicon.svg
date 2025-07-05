@@ -1,0 +1,25 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="32" height="32" rx="6" fill="url(#faviconGradient)"/>
+  
+  <!-- ロボットアイコン -->
+  <g transform="translate(4, 4)">
+    <!-- ロボットの頭 -->
+    <rect x="0" y="0" width="24" height="24" rx="4" fill="#fff"/>
+    <!-- 目 -->
+    <circle cx="8" cy="10" r="2" fill="#667eea"/>
+    <circle cx="16" cy="10" r="2" fill="#667eea"/>
+    <!-- 口 -->
+    <rect x="10" y="16" width="4" height="1" rx="0.5" fill="#667eea"/>
+    <!-- アンテナ -->
+    <line x1="12" y1="0" x2="12" y2="-3" stroke="#fff" stroke-width="1"/>
+    <circle cx="12" cy="-3" r="1" fill="#fff"/>
+  </g>
+</svg> 
