@@ -643,12 +643,20 @@ body {
     }
     
     .header-content {
-        padding: 12px 0;
-        min-height: 50px; /* スマホではヘッダーを少し小さく */
+        padding: 6px 0;
+        min-height: 40px;
     }
     
     .logo h2 {
-        font-size: 1.2rem; /* ロゴのサイズも調整 */
+        font-size: 1.1rem;
+        line-height: 1.2;
+        word-break: keep-all;
+        white-space: nowrap;
+    }
+    
+    .header-cta .btn {
+        font-size: 0.95rem;
+        padding: 8px 16px;
     }
     
     .hero-visual {
