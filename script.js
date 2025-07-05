@@ -9,8 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetSection = document.querySelector(targetId);
             
             if (targetSection) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = targetSection.offsetTop - headerHeight;
+                const header = document.querySelector('.header');
+                const headerHeight = header.offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight - 20; // 少し余白を追加
                 
                 window.scrollTo({
                     top: targetPosition,

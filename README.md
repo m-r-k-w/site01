@@ -41,6 +41,31 @@ site01/
 2. `index.html`をブラウザで開く
 3. ローカルサーバーでの実行を推奨（Live Server等）
 
+### OGP画像の生成
+
+SNSでシェアした際に美しく表示されるOGP画像を生成するには：
+
+```bash
+# 依存関係をインストール
+npm install
+
+# OGP画像を生成
+npm run generate-ogp
+```
+
+または、手動で生成する場合：
+
+1. `images/ogp-image.html`をブラウザで開く
+2. スクリーンショットを撮影（1200×630px）
+3. `images/ogp-image.jpg`として保存
+
+### 開発サーバーの起動
+
+```bash
+# 開発サーバーを起動
+npm run dev
+```
+
 ## 主要セクション
 
 ### 1. ヒーローセクション

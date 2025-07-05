@@ -1,0 +1,27 @@
+{
+  "name": "robot-programming-kids-lp",
+  "version": "1.0.0",
+  "description": "ロボットプログラミング教室キッズのランディングページ",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o",
+    "generate-ogp": "node generate-ogp.js",
+    "dev": "npx http-server -p 3000 -o --cors"
+  },
+  "keywords": [
+    "landing-page",
+    "programming",
+    "education",
+    "robotics",
+    "kids"
+  ],
+  "author": "ロボットプログラミング教室キッズ",
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^21.0.0",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 

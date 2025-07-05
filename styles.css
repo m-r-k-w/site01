@@ -102,6 +102,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 16px 0;
+    min-height: 60px; /* ヘッダーの最小高さを設定 */
 }
 
 .logo h2 {
@@ -128,6 +129,7 @@ body {
 /* ヒーローセクション */
 .hero {
     padding: 120px 0 80px;
+    margin-top: 80px; /* ヘッダーの高さ分のマージンを追加 */
     background: var(--gradient-primary);
     color: white;
     position: relative;
@@ -596,6 +598,11 @@ body {
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
+    .hero {
+        margin-top: 70px; /* スマホではヘッダーが少し小さいので調整 */
+        padding: 80px 0 60px;
+    }
+    
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -634,6 +641,15 @@ body {
         display: none;
     }
     
+    .header-content {
+        padding: 12px 0;
+        min-height: 50px; /* スマホではヘッダーを少し小さく */
+    }
+    
+    .logo h2 {
+        font-size: 1.2rem; /* ロゴのサイズも調整 */
+    }
+    
     .hero-visual {
         height: 200px;
     }
@@ -654,7 +670,8 @@ body {
     }
     
     .hero {
-        padding: 100px 0 60px;
+        margin-top: 60px; /* さらに小さい画面では調整 */
+        padding: 60px 0 40px;
     }
     
     .hero-title {
