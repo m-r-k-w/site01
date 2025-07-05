@@ -242,8 +242,10 @@ function adjustHeroPadding() {
     const header = document.querySelector('.header');
     const hero = document.querySelector('.hero');
     if (header && hero) {
-        const headerHeight = header.offsetHeight;
-        hero.style.paddingTop = (headerHeight + 30) + 'px'; // ヘッダー高さ＋30pxの余白
+        // より正確な高さ取得
+        const headerHeight = header.getBoundingClientRect().height;
+        // !importantで強制上書き
+        hero.style.setProperty('padding-top', (headerHeight + 40) + 'px', 'important');
     }
 }
 window.addEventListener('DOMContentLoaded', adjustHeroPadding);
