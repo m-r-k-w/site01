@@ -236,17 +236,3 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
     }
 }); 
-
-// ヘッダー高さに応じて.heroのpadding-topを動的に調整
-function adjustHeroPadding() {
-    const header = document.querySelector('.header');
-    const hero = document.querySelector('.hero');
-    if (header && hero) {
-        // より正確な高さ取得
-        const headerHeight = header.getBoundingClientRect().height;
-        // !importantで強制上書き
-        hero.style.setProperty('padding-top', (headerHeight + 40) + 'px', 'important');
-    }
-}
-window.addEventListener('DOMContentLoaded', adjustHeroPadding);
-window.addEventListener('resize', adjustHeroPadding); 
