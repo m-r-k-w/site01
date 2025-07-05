@@ -236,3 +236,15 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
     }
 }); 
+
+// ヘッダー高さに応じて.heroのpadding-topを動的に調整
+function adjustHeroPadding() {
+    const header = document.querySelector('.header');
+    const hero = document.querySelector('.hero');
+    if (header && hero) {
+        const headerHeight = header.offsetHeight;
+        hero.style.paddingTop = (headerHeight + 30) + 'px'; // ヘッダー高さ＋30pxの余白
+    }
+}
+window.addEventListener('DOMContentLoaded', adjustHeroPadding);
+window.addEventListener('resize', adjustHeroPadding); 
